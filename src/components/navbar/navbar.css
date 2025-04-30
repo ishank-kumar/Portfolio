@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+.navbar {
+  height: 100px;
+}
+
+.navbar .wrapper {
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navbar .wrapper .ishank {
+  margin-left: 20px; /* Adjusted for smaller screens */
+  font-size: 40px;
+  font-family: 'Teko', sans-serif;
+}
+
+.navbar .wrapper span {
+  font-weight: bold;
+}
+
+.navbar .wrapper .social {
+  display: flex;
+  gap: 20px; /* Adjusted gap for better spacing */
+  margin-right: 20px; /* Added margin for alignment */
+}
+
+.navbar .wrapper .social img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.navbar .wrapper .social img:hover {
+  transform: scale(1.2); /* Add hover effect for icons */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    height: 80px; /* Reduce navbar height for tablets */
+  }
+
+  .navbar .wrapper {
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-between;
+  }
+
+  .navbar .wrapper .ishank {
+    font-size: 30px; /* Adjust font size for tablets */
+    margin-left: 10px;
+  }
+
+  .navbar .wrapper .social {
+    gap: 15px; /* Reduce gap between icons */
+    margin-right: 10px;
+  }
+
+  .navbar .wrapper .social img {
+    width: 24px; /* Adjust icon size for tablets */
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 70px; /* Reduce navbar height for mobile */
+  }
+
+  .navbar .wrapper {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar .wrapper .ishank {
+    font-size: 24px; /* Adjust font size for mobile */
+    margin: 0; /* Center-align text */
+  }
+
+  .navbar .wrapper .social {
+    margin-top: 10px; /* Add spacing above social icons */
+    gap: 10px;
+  }
+
+  .navbar .wrapper .social img {
+    width: 20px; /* Adjust icon size for mobile */
+    height: 20px;
+  }
+}

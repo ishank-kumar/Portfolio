@@ -1,0 +1,96 @@
+/* Add your CSS styles to personalize your page */
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Teko&display=swap');
+
+.about {
+    background: url(stars.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0; /* Add padding to the top and bottom */
+}
+
+.container {
+    width: 80%; /* Decrease width for better responsiveness */
+    margin: 0 auto;
+    text-align: center; /* Center-align text for smaller screens */
+}
+
+p {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 23px;/*Reduce font size */
+    margin-bottom: 15px; /* Adjust spacing */
+    word-wrap: break-word; /* Ensure long words break properly */
+    line-height: 1.5; /* Improve readability */
+}
+
+h1, h2 {
+    color: rebeccapurple;
+    font-family: 'Teko', sans-serif;
+    font-size: 24px; /* Reduce font size */
+    margin-bottom: 10px; /* Add spacing below headings */
+}
+
+h1 {
+    font-size: 32px; /* Adjust heading size */
+    color: rgb(192, 130, 14);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align text */
+}
+
+.intro img {
+    width: 100px; /* Adjust image size */
+    border-radius: 50%;
+    margin-bottom: 15px; /* Add spacing below the image */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 85%; /* Decrease width for tablets */
+    }
+
+    p {
+        font-size: 16px; /* Further reduce font size for tablets */
+    }
+
+    h1, h2 {
+        font-size: 20px; /* Adjust font size for tablets */
+    }
+
+    h1 {
+        font-size: 28px; /* Adjust heading size for tablets */
+    }
+
+    .intro img {
+        width: 80px; /* Reduce image size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Decrease width for mobile */
+        padding: 0 10px; /* Add padding to prevent text overflow */
+    }
+
+    p {
+        font-size: 14px; /* Further reduce font size for mobile */
+        line-height: 1.4; /* Adjust line height for better readability */
+    }
+
+    h1, h2 {
+        font-size: 18px; /* Further adjust font size for mobile */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size for mobile */
+    }
+
+    .intro img {
+        width: 70px; /* Further reduce image size for mobile */
+    }
+}

@@ -1,0 +1,130 @@
+.contact {
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 100px;
+        line-height: 88px;
+    }
+
+    span {
+        font-weight: 300;
+    }
+
+    .formContainer {
+        flex: 1;
+        position: relative;
+        margin: auto;
+
+        .phoneSvg {
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input,
+            textarea {
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+            }
+
+            button {
+                padding: 20px;
+                border: none;
+                background-color: orange;
+                cursor: pointer;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack text and form vertically */
+        gap: 30px; /* Reduce gap for tablets */
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    .textContainer {
+        text-align: center; /* Center-align text for tablets */
+    }
+
+    h1 {
+        font-size: 60px; /* Reduce font size for tablets */
+        line-height: 70px;
+    }
+
+    .formContainer {
+        width: 100%; /* Full width for tablets */
+    }
+
+    form {
+        gap: 15px; /* Reduce gap between form elements */
+    }
+
+    input,
+    textarea {
+        padding: 15px; /* Adjust padding for tablets */
+    }
+
+    button {
+        padding: 15px; /* Adjust button size for tablets */
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px; /* Add padding for mobile screens */
+        gap: 20px; /* Further reduce gap for mobile */
+    }
+
+    h1 {
+        font-size: 40px; /* Further reduce font size for mobile */
+        line-height: 50px;
+    }
+
+    .textContainer {
+        text-align: center; /* Center-align text for mobile */
+    }
+
+    .formContainer {
+        width: 100%; /* Full width for mobile */
+    }
+
+    form {
+        gap: 10px; /* Further reduce gap between form elements */
+    }
+
+    input,
+    textarea {
+        padding: 10px; /* Adjust padding for mobile */
+        font-size: 14px; /* Reduce font size for mobile */
+    }
+
+    button {
+        padding: 10px; /* Adjust button size for mobile */
+        font-size: 14px; /* Reduce font size for mobile */
+    }
+}

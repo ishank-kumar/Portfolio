@@ -1,0 +1,167 @@
+.hero {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+  z-index: -1;
+}
+
+.hero .wrapper {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center;
+  align-items: flex-start; /* Keep text aligned to the left */
+}
+
+.hero .wrapper .textContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero .wrapper .textContainer h2 {
+  font-size: 30px;
+  color: rebeccapurple;
+  letter-spacing: 10px;
+}
+
+.hero .wrapper .textContainer h1 {
+  font-size: 60px;
+}
+
+.hero .wrapper .textContainer .buttons {
+  display: flex;
+  gap: 20px; /* Adds spacing between buttons */
+}
+
+.hero .wrapper .textContainer .buttons .customButton {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero .wrapper .textContainer .buttons .customButton:hover {
+  background-color: white;
+  color: #0c0c1d;
+  transform: scale(1.05);
+}
+
+.hero .wrapper .textContainer img {
+  width: 50px;
+}
+
+.hero .imageContainer {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 150px;
+  right: 80px;
+}
+
+.hero .imageContainer img{
+  width: 40vw;
+}
+
+.hero .slidingTextContainer {
+  position: absolute;
+  font-size: 45vh;
+  bottom: -120px;
+  white-space: nowrap;
+  color: #ffffff09;
+  width: 50%;
+  font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero .wrapper {
+    align-items: center; /* Center-align content for tablets */
+  }
+
+  .hero .wrapper .textContainer {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center-align text */
+    align-items: center;
+  }
+
+  .hero .wrapper .textContainer h2 {
+    font-size: 24px; /* Adjust font size for tablets */
+    letter-spacing: 5px;
+  }
+
+  .hero .wrapper .textContainer h1 {
+    font-size: 40px; /* Adjust font size for tablets */
+  }
+
+  .hero .wrapper .textContainer .buttons {
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    justify-content: center; /* Center-align buttons */
+  }
+
+  .hero .wrapper .textContainer .buttons .customButton {
+    padding: 12px 20px; /* Adjust padding for tablets */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+  }
+
+  .hero .imageContainer {
+    position: relative; /* Remove absolute positioning */
+    width: 100%;
+    right: -10px;
+    top: 50px;
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+
+  .hero .imageContainer img {
+    width: 300px;
+    visibility: hidden;
+  }
+
+  .hero .wrapper .textContainer {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center-align text */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero .wrapper .textContainer h2 {
+    font-size: 20px; /* Adjust font size for mobile */
+  }
+
+  .hero .wrapper .textContainer h1 {
+    font-size: 30px; /* Adjust font size for mobile */
+  }
+
+  .hero .wrapper .textContainer .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  .hero .wrapper .textContainer .buttons .customButton {
+    width: 100%; /* Full width buttons for mobile */
+    text-align: center;
+  }
+}

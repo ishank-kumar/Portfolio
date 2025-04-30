@@ -1,0 +1,123 @@
+.services {
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.services .textContainer p {
+    font-weight: 100;
+    font-size: 20px;
+    color: wheat;
+    text-align: right;
+}
+
+.services .textContainer hr {
+    width: 500px;
+    border: none;
+    border-top: 0.5px solid gray;
+}
+
+.services .titleContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .titleContainer .title {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.services .titleContainer .title img {
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.services .titleContainer .title h1 {
+    font-size: 96px;
+    font-weight: 100;
+}
+
+.services .titleContainer .title button {
+    width: 250px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: orange;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.services .listContainer {
+    flex: 2;
+    display: flex;
+    max-width: 1336px;
+    margin: auto;
+}
+
+.services .listContainer .box {
+    padding: 50px;
+    border: 0.5px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services .listContainer .box button {
+    height: 30px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 480px) {
+    .services .textContainer {
+        display: none; /* Hide the text container for mobile */
+    }
+
+    .services .titleContainer .title img {
+        display: none; /* Hide the image for mobile */
+    }
+
+    .services .titleContainer .title h1 {
+        font-size: 28px; /* Reduce font size for mobile */
+    }
+
+    .services .titleContainer .title button {
+        width: 150px; /* Adjust button size for mobile */
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .services .listContainer {
+        flex-direction: column; /* Stack boxes vertically for mobile */
+        gap: 20px; /* Add spacing between boxes */
+    }
+
+    .services .listContainer .box {
+        padding: 20px; /* Reduce padding for mobile */
+    }
+
+    .services .listContainer .box h2 {
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+
+    .services .listContainer .box p {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+}
