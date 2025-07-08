@@ -96,35 +96,52 @@
 
 @media (max-width: 480px) {
     .contact {
-        padding: 10px; /* Add padding for mobile screens */
-        gap: 20px; /* Further reduce gap for mobile */
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+        gap: 6px;
+        min-height: 100vh;
+        height: auto;
+        box-sizing: border-box;
+        overflow-y: auto;
     }
 
     h1 {
-        font-size: 40px; /* Further reduce font size for mobile */
-        line-height: 50px;
+        font-size: 32px;
+        line-height: 40px;
     }
 
     .textContainer {
-        text-align: center; /* Center-align text for mobile */
+        text-align: center;
+        gap: 2px;
     }
 
     .formContainer {
-        width: 100%; /* Full width for mobile */
+        width: 100%;
+        margin: 0;
+        position: static;
     }
 
     form {
-        gap: 10px; /* Further reduce gap between form elements */
+        gap: 10px;
     }
 
     input,
     textarea {
-        padding: 10px; /* Adjust padding for mobile */
-        font-size: 14px; /* Reduce font size for mobile */
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;         // Make sure input and textarea take full width
+        box-sizing: border-box;
+    }
+
+    textarea {
+        min-height: 60px;    // Make textarea shorter in height
+        max-height: 100px;   // Prevent it from growing too tall
+        resize: vertical;    // Allow vertical resize if needed
     }
 
     button {
-        padding: 10px; /* Adjust button size for mobile */
-        font-size: 14px; /* Reduce font size for mobile */
+        padding: 10px;
+        font-size: 14px;
     }
 }

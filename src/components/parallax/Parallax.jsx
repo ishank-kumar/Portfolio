@@ -26,7 +26,7 @@ const Parallax = ({type}) => {
         <motion.div className="mountains"></motion.div>
         <motion.div className="planets" style={{
             y:yBg,
-            backgroundImage: `url(${type==="services" ? "/planets.png" : "/sun.png" })`
+            backgroundImage: `url(${type==="services" ? "/Portfolio/planets.png" : "/Portfolio/sun.png" })`
             }}>
         </motion.div>
         <motion.div style={{x:yBg}} className="stars"></motion.div>

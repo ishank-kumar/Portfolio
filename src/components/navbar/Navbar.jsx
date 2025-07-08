@@ -13,10 +13,10 @@ const Navbar = () => {
             transition={{duration:0.5}}
             ><div className="ishank">Ishank</div></motion.span>
             <div className="social">
-                <a href="https://www.linkedin.com/in/ishank-kumar-1b9aa4266"><img src="/linkedin.png" alt="" /></a>
-                <a href="https://github.com/ishank-kumar"><img src="/GitHub.png" alt="" /></a>
-                <a href="https://www.instagram.com/ll._.ishank._.ll/"><img src="/instagram.png" alt="" /></a>
-                <a href="https://www.facebook.com/ishank.kumar.338"><img src="/facebook.png" alt="" /></a>
+                <a href="https://www.linkedin.com/in/ishank-kumar-1b9aa4266"><img src="/Portfolio/linkedin.png" alt="Linkedin" /></a>
+                <a href="https://github.com/ishank-kumar"><img src="/Portfolio/GitHub.png" alt="GitHub" /></a>
+                <a href="https://leetcode.com/u/ishank_kumar123/"><img src="/Portfolio/leetcode.jpeg" alt="Leetcode" /></a>
+                <a href="https://www.geeksforgeeks.org/user/ishankku2yp8/"><img src="/Portfolio/gfg.png" alt="GFG" /></a>
             </div>
         </div>
     </div>

@@ -86,38 +86,53 @@
 
 /* Media Queries for Mobile Screens */
 @media (max-width: 480px) {
+    .services {
+        min-height: 100vh;
+        width: 100vw;
+        /* overflow-x: hidden; */
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
     .services .textContainer {
-        display: none; /* Hide the text container for mobile */
+        display: none; /* Hide for mobile as per your earlier requirements */
     }
 
     .services .titleContainer .title img {
-        display: none; /* Hide the image for mobile */
+        display: none;
     }
 
     .services .titleContainer .title h1 {
-        font-size: 28px; /* Reduce font size for mobile */
+        font-size: 28px;
     }
 
     .services .titleContainer .title button {
-        width: 150px; /* Adjust button size for mobile */
+        width: 150px;
         height: 50px;
         font-size: 16px;
     }
 
     .services .listContainer {
-        flex-direction: column; /* Stack boxes vertically for mobile */
-        gap: 20px; /* Add spacing between boxes */
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
     }
 
     .services .listContainer .box {
-        padding: 20px; /* Reduce padding for mobile */
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .services .listContainer .box h2 {
-        font-size: 18px; /* Adjust font size for mobile */
+        font-size: 18px;
     }
 
     .services .listContainer .box p {
-        font-size: 14px; /* Adjust font size for mobile */
+        font-size: 14px;
     }
 }

@@ -55,20 +55,28 @@ const Hero = () => {
             A &nbsp; B.Tech student, An enthusiast, and a devoted web developer.
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.a
-              href="#Portfolio"
+            <motion.button
               variants={textVariants}
               className="customButton"
+              type="button"
+              onClick={() => {
+                const el = document.getElementById("portfolio");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               See my latest projects
-            </motion.a>
-            <motion.a
-              href="#Contact"
+            </motion.button>
+            <motion.button
               variants={textVariants}
               className="customButton"
+              type="button"
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Contact me
-            </motion.a>
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}

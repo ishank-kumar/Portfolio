@@ -7,29 +7,29 @@ const items = [
         id: 1,
         title: "Beauty Parlor Website",
         img: "mm.png",
-        desc: "Created a professional website for a beauty parlour with booking features and elegant UI.",
-        link: "https://lnkd.in/dtD4xN9G", // Add the link here
+        desc: "A visually engaging website for a beauty parlour, designed to showcase services, prices, and a gallery of makeup looks. The site features an elegant and modern user interface that highlights the parlour’s offerings, making it easy for visitors to explore styles and pricing. Responsive design ensures a seamless browsing experience across all devices, enhancing customer interest and engagement.",
+        link: "https://ishank-kumar.github.io/Moon-Shine/Moonshine%20beautyzone/", // Add the link here
     },
     {
         id: 2,
         title: "Gym Web Application",
         img: "gym.png",
-        desc: "Built a React-based gym website integrating RapidAPI for live fitness content.",
-        link: "https://github.com/ishank-kumar/gym-web-app", // Add the link here
+        desc: "A React.js-based gym web application that leverages RapidAPI to provide a comprehensive exercise library. Users can filter exercises by body part, view detailed information for each exercise, watch related YouTube video demonstrations, and discover similar exercise suggestions. The intuitive interface makes it easy to explore and plan effective workout routines.",
+        link: "https://ishank-kumar.github.io/gym-web-app/", // Add the link here
     },
     {
         id: 3,
-        title: "Food Delivery App",
-        img: "food.png",
-        desc: "A seamless and responsive food delivery application built with the MERN stack, offering real-time order tracking and secure user authentication.",
-        link: "https://fooddelivery.com", // Add the link here
+        title: "Personal Finance Visualizer",
+        img: "pfv.png",
+        desc: "An interactive web application that helps users track, visualize, and manage their personal finances. Features include dynamic charts for income and expenses, budgeting tools, and insightful analytics to empower smarter financial decisions. Built with the MERN stack for a seamless and secure user experience.",
+        link: "https://personal-finance-tracker-ten-alpha.vercel.app/", // Add the link here
     },
     {
         id: 4,
         title: "Community Based Task Management System",
         img: "comm.png",
-        desc: "A collaborative task management platform where communities unite, complete tasks, and earn rewards — built for productivity and engagement.",
-        link: "https://communitytasks.com", // Add the link here
+        desc: "A collaborative task management platform that empowers communities to organize, assign, and track tasks collectively. Users can join or create communities, contribute to shared goals, and earn rewards for completing tasks. The intuitive interface promotes teamwork, productivity, and engagement, making it easy to manage group projects and community initiatives.",
+        link: "https://github.com/ishank-kumar/Task-Management", // Add the link here
     },
 ];
 
